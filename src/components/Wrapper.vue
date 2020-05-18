@@ -2,7 +2,10 @@
     <div class="Wrapper">
         <h1>Каталог</h1>
         <Catalog />
-        <Cart />
+        <Cart
+                v-if="CART.length"
+                :cart_data ='CART'
+        />
     </div>
 </template>
 
@@ -10,8 +13,9 @@
 
     import Catalog from "./Catalog";
     import Cart from "./Cart";
+    import {mapGetters} from 'vuex'
 
-    export default {
+    export  default {
     name:'Wrapper',
         components: {Cart, Catalog},
         component: {
@@ -25,9 +29,10 @@
         }
     },
     computed: {
-
+        ...mapGetters ([
+            'CART'])
     },
-    // methods: {},
+    methods: {},
     watch:{},
 
 

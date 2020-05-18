@@ -1,0 +1,104 @@
+{
+  "products": [
+    {
+      "image": "1.jpg",
+      "name": "Bag 1",
+      "price": 2100.234234234,
+      "size": "L",
+      "color": "Серый",
+      "article": "B1",
+      "available": true,
+      "category": "Женские"
+    },
+    {
+      "image": "2.jpg",
+      "name": "Bag 2",
+      "price": 3150.12312412,
+      "size": "L",
+      "color": "Черный",
+      "article": "B2",
+      "available": true,
+      "category": "Женские"
+    },
+    {
+      "image": "3.jpg",
+      "name": "Bag 3",
+      "price": 4200.51524,
+      "size": "M",
+      "color": "Коричневый",
+      "article": "B3",
+      "available": false,
+      "category": "Мужские"
+    },
+    {
+      "image": "4.jpg",
+      "name": "Bag 4",
+      "price": 5300.1245512,
+      "size": "S",
+      "color": "Черный",
+      "article": "B4",
+      "available": true,
+      "category": "Мужские"
+    },
+    {
+      "image": "5.jpg",
+      "name": "Bag 5",
+      "price": 6500.3522314,
+      "size": "L",
+      "color": "Серый",
+      "article": "B5",
+      "available": false,
+      "category": "Мужские"
+    },
+    {
+      "image": "6.jpg",
+      "name": "Bag 6",
+      "price": 8700.4124123,
+      "size": "L",
+      "color": "Черный",
+      "article": "B6",
+      "available": true,
+      "category": "Мужские"
+    },
+    {
+      "image": "7.jpg",
+      "name": "Bag 7",
+      "price": 8700.4124123,
+      "size": "L",
+      "color": "Черный",
+      "article": "B7",
+      "available": true,
+      "category": "Мужские"
+    },
+    {
+      "image": "8.jpg",
+      "name": "Bag 8",
+      "price": 8700.4124123,
+      "size": "L",
+      "color": "Черный",
+      "article": "B8",
+      "available": true,
+      "category": "Женские"
+    },
+    {
+      "image": "9.jpg",
+      "name": "Bag 9",
+      "price": 8700.4124123,
+      "size": "L",
+      "color": "Серый",
+      "article": "B9",
+      "available": true,
+      "category": "Женские"
+    },
+    {
+      "image": "10.jpg",
+      "name": "Bag 10",
+      "price": 8700.4124123,
+      "size": "S",
+      "color": "Красный",
+      "article": "B10",
+      "available": true,
+      "category": "Женские"
+    }
+  ]}
+
