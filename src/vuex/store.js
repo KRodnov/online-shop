@@ -67,6 +67,9 @@ let store = new Vuex.Store( {
        }
    },
    getters: {
+       getToDetails: state => name => {
+            return state.products.find((el)=>el.name === name);
+           },
        PRODUCTS(state) {
            return state.products;
        },

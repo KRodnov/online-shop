@@ -9,6 +9,8 @@
                 v-on:click="addToCart"
                 class="Item__add_to_cart_btn"
         >Добавить в корзину</button>
+        <button v-on:click="detailsButtonClicked(product_data.name)">
+            Подробнее</button>
     </div>
 </template>
 
@@ -24,6 +26,10 @@
             }
         },
         methods: {
+            detailsButtonClicked (name) {
+                console.log(`detailsButtonClicked: ${name}`);
+                this.$router.push({name:'itemDetails', params: {name:name}});
+            },
             addToCart () {
                this.$emit('addToCart',this.product_data);
             },
@@ -36,13 +42,14 @@
 
 <style lang="scss">
 .Item {
-    flex-basis: 25%;
+    flex-basis: content;
     box-shadow: 0 0 8px 0 #c0c0c0;
     padding: $padding*2;
     margin-bottom: $margin*2;
+    margin-top: 50px;
 }
     .Item__image {
         width: 200px;
-
+        height: 200px;
     }
 </style>
