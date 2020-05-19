@@ -1,27 +1,28 @@
 <template>
     <div class="Wrapper">
-        <h1>Каталог</h1>
-        <Catalog />
-        <Cart
-                v-if="CART.length"
-                :cart_data ='CART'
-        />
+        <router-view></router-view>
+<!--        <h1>Каталог</h1>-->
+<!--        <Catalog />-->
+<!--        <Cart-->
+<!--                v-if="CART.length"-->
+<!--                :cart_data ='CART'-->
+<!--        />-->
     </div>
 </template>
 
 <script>
 
-    import Catalog from "./Catalog";
-    import Cart from "./Cart";
-    import {mapGetters} from 'vuex'
+    // import Catalog from "./Catalog";
+    // import Cart from "./Cart";
+    // import {mapGetters} from 'vuex'
 
     export  default {
     name:'Wrapper',
-        components: {Cart, Catalog},
-        component: {
-        Catalog:Catalog,
-        Cart:Cart,
-    },
+        // components: {Cart, Catalog},
+        // component: {
+        // Catalog:Catalog,
+        // Cart:Cart,
+    // },
     props:{},
     data() {
         return {
@@ -29,8 +30,8 @@
         }
     },
     computed: {
-        ...mapGetters ([
-            'CART'])
+        // ...mapGetters ([
+        //     'CART'])
     },
     methods: {},
     watch:{},
@@ -39,7 +40,7 @@
     }
 </script>
 
-<style scoped>
+<style>
 .Wrapper {
 
     max-width: 900px;

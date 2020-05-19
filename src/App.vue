@@ -26,3 +26,5 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+<!--json-server —watch db.json-->

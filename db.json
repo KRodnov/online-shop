@@ -3,7 +3,7 @@
     {
       "image": "1.jpg",
       "name": "Bag 1",
-      "price": 2100.234234234,
+      "price": 3500,
       "size": "L",
       "color": "Серый",
       "article": "B1",
@@ -13,7 +13,7 @@
     {
       "image": "2.jpg",
       "name": "Bag 2",
-      "price": 3150.12312412,
+      "price": 2700,
       "size": "L",
       "color": "Черный",
       "article": "B2",
@@ -23,7 +23,7 @@
     {
       "image": "3.jpg",
       "name": "Bag 3",
-      "price": 4200.51524,
+      "price": 1600,
       "size": "M",
       "color": "Коричневый",
       "article": "B3",
@@ -33,7 +33,7 @@
     {
       "image": "4.jpg",
       "name": "Bag 4",
-      "price": 5300.1245512,
+      "price": 1000,
       "size": "S",
       "color": "Черный",
       "article": "B4",
@@ -43,7 +43,7 @@
     {
       "image": "5.jpg",
       "name": "Bag 5",
-      "price": 6500.3522314,
+      "price": 2000,
       "size": "L",
       "color": "Серый",
       "article": "B5",
@@ -53,7 +53,7 @@
     {
       "image": "6.jpg",
       "name": "Bag 6",
-      "price": 8700.4124123,
+      "price": 2300,
       "size": "L",
       "color": "Черный",
       "article": "B6",
@@ -63,7 +63,7 @@
     {
       "image": "7.jpg",
       "name": "Bag 7",
-      "price": 8700.4124123,
+      "price": 2000,
       "size": "L",
       "color": "Черный",
       "article": "B7",
@@ -73,7 +73,7 @@
     {
       "image": "8.jpg",
       "name": "Bag 8",
-      "price": 8700.4124123,
+      "price": 2400,
       "size": "L",
       "color": "Черный",
       "article": "B8",
@@ -83,7 +83,7 @@
     {
       "image": "9.jpg",
       "name": "Bag 9",
-      "price": 8700.4124123,
+      "price": 2700,
       "size": "L",
       "color": "Серый",
       "article": "B9",
@@ -93,7 +93,7 @@
     {
       "image": "10.jpg",
       "name": "Bag 10",
-      "price": 8700.4124123,
+      "price": 1600,
       "size": "S",
       "color": "Красный",
       "article": "B10",

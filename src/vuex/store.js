@@ -14,24 +14,27 @@ let store = new Vuex.Store( {
            state.products = products;
        },
        SET_CART:(state, product) => {
-           if (state.cart.length) {
-            let isProductExists = false;
-            state.cart.map(function (item) {
-                if (item.article === product.article) {
-                    isProductExists = true;
-                    item.quantity++
-                }
-            })
-               if(!isProductExists) {
-                   state.cart.push(product)
+           let isProductExist = false
+           state.cart.map(function (item) {
+               if (item.article === product.article) {
+                   isProductExist = true
+                   item.quantity++
                }
-           } else {
-
-           state.cart.push(product)
-           }
+           })
+           isProductExist || state.cart.push({ ...product, quantity: 1 })
        },
        REMOVE_FROM_CART:(state, index) => {
           state.cart.splice(index,1)
+       },
+       INCREMENT:(state,index) => {
+            state.cart[index].quantity++
+       },
+
+       DECREMENT:(state,index) => {
+           if (state.cart[index].quantity >1) {
+               state.cart[index].quantity--
+           }
+
        }
    },
    actions: {
@@ -55,6 +58,13 @@ let store = new Vuex.Store( {
        DELETE_FROM_CART ({commit},index){
            commit('REMOVE_FROM_CART',index);
        },
+
+       INCREMENT_CART ({commit},index) {
+            commit('INCREMENT',index)
+       },
+       DECREMENT_CART ({commit},index) {
+            commit('DECREMENT',index)
+       }
    },
    getters: {
        PRODUCTS(state) {

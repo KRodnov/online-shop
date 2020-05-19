@@ -1,7 +1,7 @@
 <template>
     <div class="Item">
         <img class="Item__image"
-             v-bind:src=" require('../assets/images/' + product_data.image)"
+             v-bind:src="require('../assets/images/' + product_data.image)"
              alt="Image">
         <p class="Item__name">{{product_data.name}}</p>
         <p class="Item__price">Цена: {{product_data.price}}  &#x20bd;</p>
@@ -26,6 +26,9 @@
         methods: {
             addToCart () {
                this.$emit('addToCart',this.product_data);
+            },
+            mounted() {
+                this.$set(this.product_data,  1)
             }
         }
     }
