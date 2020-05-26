@@ -11,15 +11,15 @@
             </div>
         </router-link>
         <h1>Данные о товаре: {{$route.params.name}}</h1>
-<!--        <ul>-->
-<!--           <li>Название: {{$route.params.name}}</li>-->
-<!--            <li>Размер: {{$route.params.size}}</li>-->
-<!--            <li>Цвет:{{$route.params.color}}</li>-->
-<!--            <li>Категория: {{$route.params.categoty}}</li>-->
-<!--            <li>Артикул: {{$route.params.article}}</li>-->
-<!--            <li>Цена: {{$route.params.price}}</li>-->
+        <ul>
+           <li>Название: {{$route.params.name}}</li>
+            <li>Размер: {{$route.params.size}}</li>
+            <li>Цвет:{{$route.params.color}}</li>
+            <li>Категория: {{$route.params.category}}</li>
+            <li>Артикул: {{$route.params.article}}</li>
+            <li>Цена: {{$route.params.price}}</li>
 
-<!--        </ul>-->
+        </ul>
         <div v-html="details"></div>
     </div>
 </template>
@@ -41,7 +41,9 @@
             ]),
         },
         created: function () {
-            let itemDetailsData = this.$store.getters.getToDetails(this.$route.params.name);
+            let itemDetailsData =
+                this.$store.getters.getToDetails(this.$route.params.name,this.$route.params.size,
+                    this.$route.params.color, this.$route.params.category, this.$route.params.article, this.$route.params.price);
 
 
                 console.log(itemDetailsData);

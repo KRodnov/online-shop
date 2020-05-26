@@ -3,14 +3,16 @@
         <img class="Item__image"
              v-bind:src="require('../assets/images/' + product_data.image)"
              alt="Image">
-        <p class="Item__name">{{product_data.name}}</p>
-        <p class="Item__price">Цена: {{product_data.price}}  &#x20bd;</p>
+        <p class="Item__name"><b>{{product_data.name}}</b></p>
+        <p class="Item__price"><b>Цена: {{product_data.price}}  &#x20bd;</b></p>
+        <p class="Item__size">Размер: {{product_data.size}}</p>
+        <p class="Item__color">Цвет: {{product_data.color}}</p>
+        <p class="Item__category">Категория: {{product_data.category}}</p>
         <button
                 v-on:click="addToCart"
                 class="Item__add_to_cart_btn"
         >Добавить в корзину</button>
-        <button v-on:click="detailsButtonClicked(product_data.name)">
-            Подробнее</button>
+
     </div>
 </template>
 
@@ -26,10 +28,7 @@
             }
         },
         methods: {
-            detailsButtonClicked (name) {
-                console.log(`detailsButtonClicked: ${name}`);
-                this.$router.push({name:'itemDetails', params: {name:name}});
-            },
+
             addToCart () {
                this.$emit('addToCart',this.product_data);
             },

@@ -42,7 +42,6 @@
         },
         methods: {
             ...mapActions([
-                'GET_PRODUCTS_FROM_API',
                 'ADD_TO_CART'
             ]),
 
@@ -50,9 +49,7 @@
                 this.ADD_TO_CART(data)
             }
         },
-        mounted() {
-            this.GET_PRODUCTS_FROM_API();
-        }
+
 
 
     }
